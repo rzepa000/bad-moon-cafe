@@ -8,7 +8,7 @@ import ThankYou from "./components/ThankYou";
 
 
 function App() {
-  const [page, setPage]=useState(0);
+  const [page, setPage]=useState(1);
   return (    
     <div>
       <Navbar setPage={setPage} />
