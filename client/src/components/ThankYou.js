@@ -3,7 +3,7 @@ import React from 'react';
 const ThankYou = _ =>{
     return(
         <div>
-            <p>thank you</p>
+            <p>Thank you for your Booking!</p>
         </div>
     )
 }

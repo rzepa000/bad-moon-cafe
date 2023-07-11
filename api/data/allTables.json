@@ -1,124 +1,100 @@
 {
-    "tables": [
-        {
-            "name": "Table 1",
-            "capacity": 6,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 2",
-            "capacity": 2,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 3",
-            "capacity": 2,
-            "isAvailable": true,
-            "gameType": "warhammer"
-        },
-        {
-            "name": "Table 4",
-            "capacity": 7,
-            "isAvailable": true,
-            "gameType": "warhammer"
-        },
-        {
-            "name": "Table 5",
-            "capacity": 6,
-            "isAvailable": true,
-            "gameType": "board games"
-        },
-        {
-            "name": "Table 6",
-            "capacity": 5,
-            "isAvailable": true,
-            "gameType": "board games"
-        },
-        {
-            "name": "Table 7",
-            "capacity": 2,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 8",
-            "capacity": 5,
-            "isAvailable": true,
-            "gameType": "warhammer"
-        },
-        {
-            "name": "Table 9",
-            "capacity": 7,
-            "isAvailable": true,
-            "gameType": "board games"
-        },
-        {
-            "name": "Table 10",
-            "capacity": 3,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 11",
-            "capacity": 7,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 12",
-            "capacity": 7,
-            "isAvailable": true,
-            "gameType": "board games"
-        },
-        {
-            "name": "Table 13",
-            "capacity": 2,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 14",
-            "capacity": 5,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 15",
-            "capacity": 6,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 16",
-            "capacity": 7,
-            "isAvailable": true,
-            "gameType": "chess"
-        },
-        {
-            "name": "Table 17",
-            "capacity": 3,
-            "isAvailable": true,
-            "gameType": "board games"
-        },
-        {
-            "name": "Table 18",
-            "capacity": 5,
-            "isAvailable": true,
-            "gameType": "warhammer"
-        },
-        {
-            "name": "Table 19",
-            "capacity": 6,
-            "isAvailable": true,
-            "gameType": "warhammer"
-        },
-        {
-            "name": "Table 20",
-            "capacity": 5,
-            "isAvailable": true,
-            "gameType": "chess"
-        }
-    ]
+  "tables": [
+    {
+      "name": "Table 1",
+      "capacity": 5,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 2",
+      "capacity": 5,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 3",
+      "capacity": 5,
+      "isAvailable": true,
+      "gameTypes": "Warhammer"
+    },
+    {
+      "name": "Table 4",
+      "capacity": 6,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 5",
+      "capacity": 7,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 6",
+      "capacity": 2,
+      "isAvailable": true,
+      "gameTypes": "Chess"
+    },
+    {
+      "name": "Table 7",
+      "capacity": 2,
+      "isAvailable": true,
+      "gameTypes": "Chess"
+    },
+    {
+      "name": "Table 8",
+      "capacity": 3,
+      "isAvailable": true,
+      "gameTypes": "Warhammer"
+    },
+    {
+      "name": "Table 9",
+      "capacity": 5,
+      "isAvailable": true,
+      "gameTypes": "Warhammer"
+    },
+    {
+      "name": "Table 10",
+      "capacity": 4,
+      "isAvailable": true,
+      "gameTypes": "Warhammer"
+    },
+    {
+      "name": "Table 11",
+      "capacity": 3,
+      "isAvailable": true,
+      "gameTypes": "Warhammer"
+    },
+    {
+      "name": "Table 12",
+      "capacity": 5,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 13",
+      "capacity": 2,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 14",
+      "capacity": 3,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 15",
+      "capacity": 7,
+      "isAvailable": true,
+      "gameTypes": "Board games"
+    },
+    {
+      "name": "Table 16",
+      "capacity": 2,
+      "isAvailable": true,
+      "gameTypes": "Chess"
+    }
+  ]
 }

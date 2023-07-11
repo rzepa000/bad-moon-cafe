@@ -1,50 +1,46 @@
-var express = require('express');
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 const mongoose = require("mongoose");
-const Day= require("../models/Day").model;
-const Reservation= require("../models/reservation").model;
 
-// parameters
-// date 
-// table
-// name 
-// phone 
-// email
+const Day = require("../models/day").model;
+const Reservation = require("../models/reservation").model;
 
+// Parameters:
+// {
+//   "date": String ("Dec 02 2019 06:00"),
+//   "table": table id,
+// 	"name": String,
+// 	"phone": String,
+// 	"email": String
+// }
 
+router.post("/", async (req, res, next) => {
+  const day = await Day.findOne({ date: req.body.date });
 
+  if (!day) {
+    res.status(400).send("Day not found");
+    return;
+  }
 
-router.post('/', function(req, res, next) {
-   Day.find({date: req.body.date}, (err, days) => {
-    if(!err){
-      if(days.length> 0){
-        let days=days[0];
-        days.tables.forEach(table => {
-          if(table._id == req.body.table){
-            //correct table is table
-            table.reservation = new Reservation({
-              name: req.body.name,
-              phone: req.body.phone,
-              email: req.body.email
-            })
-            table.isAvailable = false;
-            days.save(err=>{
-              if(err){
-                console.log(err);
+  const table =day.tables.find(table => table._id == req.body.table);
 
-              }else{
-                console.log("reserved");
-                res.status(200).send("added reservation");
-              }
-            })
-          }
-        });
-      }else{
-        console.log("day not found");
-      }
+  if (!table) {
+    res.status(400).send("Table not found");
+    return;
+  }
 
-    }
-   })
+  const reservation = new Reservation({
+    name: req.body.name,
+    phone: req.body.phone,
+    email: req.body.email
+  });
+
+  table.reservation = reservation;
+  table.isAvailable = false;
+
+  await day.save();
+
+  res.status(200).send("Added Reservation");
 });
 
 module.exports = router;

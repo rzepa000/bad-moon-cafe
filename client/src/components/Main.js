@@ -4,7 +4,7 @@ import { Row, Col, Button } from 'reactstrap';
 const Main = props =>{
     return(
         <div>
-           <Row noGutters className='text-center align-items-center'>
+           <Row className='text-center align-items-center'>
                 <Col>
                     
                     <p className='looking-for-table'>Book your game table here!
@@ -22,7 +22,7 @@ const Main = props =>{
                     </Button>
                 </Col>
            </Row>
-           <Row noGutters className='text-center big-img-container'>
+           <Row className='text-center big-img-container'>
 
             <Col>
             <img

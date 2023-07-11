@@ -1,12 +1,11 @@
 const mongoose = require('mongoose');
 
-let reservationSchema = new mongoose.Schema({
-    name: String,
-    phone: String,
-    email: String
-})
-
-let Reservation = mongoose.model("Reservation", reservationSchema);
+var reservationSchema = new mongoose.Schema({
+  name: String,
+  phone: String,
+  email: String
+});
+var Reservation = mongoose.model("Reservation", reservationSchema);
 
 module.exports.model = Reservation;
-module.exports.schema= reservationSchema;
+module.exports.schema = reservationSchema;

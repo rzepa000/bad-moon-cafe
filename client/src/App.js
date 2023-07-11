@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-// import {Nav} from "reactstrap";
+
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Book from "./components/Book";

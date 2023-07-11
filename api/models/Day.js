@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
-const tableSchema=require("./Table").schema;
+const tableSchema = require("./table").schema;
 
-let daySchema = new mongoose.Schema({
-    date: Date,
-    tables: [tableSchema]
-    
-})
-
-let Day = mongoose.model("Day", daySchema);
+var daySchema = new mongoose.Schema({
+  date: Date,
+  tables: [tableSchema]
+});
+var Day = mongoose.model("Day", daySchema);
 
 module.exports.model = Day;
-module.exports.schema= daySchema;
+module.exports.schema = daySchema;
